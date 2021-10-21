@@ -9,12 +9,16 @@ body {
 }
 
 h1 {
-  margin: 0;
+  margin-left: 50px;
   border-top: 0;
+  display: inline-block;
+  font-family: Lobster;
+  font-weight: 400;
 }
 
 a {
   color: #aec3b0;
+  padding: 5px 15px;
 }
 
 a:link {
@@ -26,10 +30,13 @@ a:hover {
   color: #bdb969;
 }
 
-h5 {
+h2 {
   color: #aec3b0;
   text-align: right;
   padding-right: 30px;
+  margin-left: 65%;
+  display: inline-block;
+  position: absolute;
 }
 
 h4 {
@@ -63,7 +70,6 @@ ul img {
 .topo {
   background-color: #124559;
   color: #eff6e0;
-  padding-bottom: 8px;
   margin-bottom: 0;
   border-bottom: 0;
 }
@@ -81,4 +87,9 @@ ul img {
   color: #eff6e0;
   margin: auto;
   padding-top: 7px;
+}
+
+.gradient {
+  background: linear-gradient(45deg, #124559, #175B75, #2CAADB, #175B75, #124559);
+  padding: 30px 30px;
 }
