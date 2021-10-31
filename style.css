@@ -37,34 +37,39 @@ h2 {
   margin-left: 65%;
   display: inline-block;
   position: absolute;
+  /* font-size: 2rem; */
 }
 
 h4 {
   margin: 0;
-  padding: 3px;
-  font-size: 22px;
+  padding: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 
-ul {
-  text-align: center;
+.inner-txt {
+  position: absolute;
+  bottom: -40%;
+  left: 5%;
+  font-size: 4rem;
+  text-shadow: 1px 1px #124559;
 }
 
-ul li {
-  display: inline-block;
-  max-width: 30%;
-  margin: 8px;
+
+.card {
+  max-width: 23%;
+  margin: 8px 5%;
   vertical-align: top;
 }
 
-ul li p {
+.card p {
   font-size: 13px;
 }
 
-ul img {
-  height: 100px;
-  border-radius: 50%;
-  margin: 10px;
+.card img {
+  width: 69.69%;
+  margin: 0 auto;
+  border-radius: 3%;
 }
 
 .topo {
@@ -76,10 +81,31 @@ ul img {
 
 .Soft {
   background-color: #aec3b0;
-  margin: 0;
+  margin: 0 auto;
   padding-bottom: 3px;
   padding-top: 7px;
-  position: 50%;
+  /* position: 50%; */
+  width: 100%;
+}
+
+.card-container {
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+/* 
+.title-skill {
+  width: 100%;
+} */
+
+footer ul {
+  color: #aec3b0;
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
 }
 
 .Hard {
@@ -87,6 +113,7 @@ ul img {
   color: #eff6e0;
   margin: auto;
   padding-top: 7px;
+  width: 100%;
 }
 
 .gradient {
