@@ -47,12 +47,17 @@ h4 {
   text-align: center;
 }
 
+.img-txt {
+  position: relative;
+}
+
 .inner-txt {
   position: absolute;
-  bottom: -40%;
+  top: 62%;
   left: 5%;
-  font-size: 4rem;
-  text-shadow: 1px 1px #124559;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px #124559;
 }
 
 
