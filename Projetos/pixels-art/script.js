@@ -27,7 +27,7 @@ btn.addEventListener('click', function() {
 
 let input = document.querySelector('input');
 let vqv = document.querySelector('#generate-board');
-vqv.addEventListener('click', function() {
+vqv.addEventListener('click', () => {
   if(input.value.length == 0) {
     alert('Board inválido!');
   } else {
@@ -45,7 +45,7 @@ vqv.addEventListener('click', function() {
   for (let i = 25; i < nxn; i += 1) {
     novaDiv = document.createElement('div');
     novaDiv.className = 'pixel';
-    novaDiv.addEventListener('click', function(e) {
+    novaDiv.addEventListener('click', (e) => {
       let selected = document.querySelector('.selected');
       e.target.style.backgroundColor = selected.id;
     })
