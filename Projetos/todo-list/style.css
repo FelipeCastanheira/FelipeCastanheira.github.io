@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgb(62, 255, 52);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+section {
+  display: inline;
+  /* position: relative;
+  left: 60px; */
+}
+
+h1 {
+  position: relative;
+  left: 50px;
+}
+
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
+
+#mover-cima {
+  background-color: rgb(238, 255, 00);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 29px;
+  transition: 0.4s;
+}
+
+#mover-cima:hover {
+  background-color: rgba(217, 255, 0, 0.616);
+  cursor: pointer;
+}
+
+#remover-finalizados {
+  background-color: rgb(52, 62, 255);
+  color: aliceblue;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  position: relative;
+  top: -10px;
+  transition: 0.4s;
+}
+
+#remover-finalizados:hover {
+  background-color: rgb(92, 154, 253);
+  cursor: pointer;
+}
+
+footer {
+  display: inline-block;
+  background-color: rgb(3, 3, 3);
+  border-radius: 16px;
+  padding-bottom: 0;
+  padding-top: 5px;
+}
+
+#salvar-tarefas {
+  background-color: rgb(62, 255, 52);
+  height: 40px;
+  width: 60px;
+  border-radius: 5px;
+  position: relative;
+  top: -3px;
+  transition: 0.4s;
+}
+
+#salvar-tarefas:hover {
+  background-color: rgba(52, 255, 130, 0.719);
+  cursor: pointer;
+}
+
+#apaga-tudo {
+  background-color: red;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 0.4s;
+}
+
+#apaga-tudo:hover {
+  background-color: rgba(255, 72, 0, 0.692);
+  cursor: pointer;
+}
+
+#remover-selecionado {
+  background-color: rgb(27, 18, 18);
+  color: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 0.4s;
+}
+
+#remover-selecionado:hover {
+  background-color: rgb(221, 159, 134);
+  cursor: pointer;
+}
+
+#criar-tarefa {
+  background-color: rgb(52, 62, 255);
+  color: aliceblue;
+  transition: 0.4s;
+}
+
+#criar-tarefa:hover {
+  background-color: rgb(92, 154, 253);
+  cursor: pointer;
+}
+
+#mover-baixo {
+  background-color: rgb(238, 255, 0);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 29px;
+  transition: 0.4s;
+}
+
+#mover-baixo:hover {
+  background-color: rgba(217, 255, 0, 0.616);
+  cursor: pointer;
+}
+
+button {
+  width: 120px;
+  margin: 5px;
+}
+
+input {
+  text-align: center;
+}
+
+#lista-tarefas {
+  position: relative;
+  left: -30px;
+}
