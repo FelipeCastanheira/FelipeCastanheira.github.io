@@ -75,6 +75,13 @@ h4 {
   width: 69.69%;
   margin: 0 auto;
   border-radius: 3%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card img:hover {
+  opacity: 50%;
+  width: 73%;
 }
 
 .topo {
