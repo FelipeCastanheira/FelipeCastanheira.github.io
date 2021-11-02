@@ -132,3 +132,28 @@ footer ul {
   background: linear-gradient(45deg, #124559, #175B75, #2CAADB, #175B75, #124559);
   padding: 30px 30px;
 }
+
+.projects {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  margin: 0 auto;
+  background-color: #aec3b0;
+  padding: 15px 0;
+}
+
+.projects iframe {
+  width: 46%;
+  height: 83%;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 2%;
+}
+
+.hProj {
+  background-color: #aec3b0;
+}
+
+.hProj h4 {
+  color: black;
+}
