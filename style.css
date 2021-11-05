@@ -135,11 +135,29 @@ footer ul {
 
 .projects {
   width: 100%;
-  height: 700px;
+  height: 200px;
   display: flex;
   margin: 0 auto;
   background-color: #aec3b0;
   padding: 15px 0;
+  justify-content: space-evenly;
+}
+
+.projects button {
+  height: 70%;
+  width: 30%;
+  font-size: 40px;
+  border: none;
+  background-color: #070707;
+  color: #aec3b0;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.projects button:hover {
+  background-color: #2CAADB;
+  color: white;
 }
 
 .projects iframe {

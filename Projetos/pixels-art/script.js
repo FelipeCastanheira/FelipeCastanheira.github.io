@@ -57,6 +57,7 @@ vqv.addEventListener('click', () => {
   }
 });
 
+
 window.onload = function() {
   let randomNumber = Math.random() * 200;
   let random2 = Math.random() * 200;
@@ -70,6 +71,7 @@ window.onload = function() {
   colorArr[2].id = cor2;
   colorArr[3].style.backgroundColor = cor3;
   colorArr[3].id = cor3;
+
   // if (randomNumber < 0.2) {
   //   colorArr[1].style.backgroundColor = 'green';
   //   colorArr[1].id = 'green';
@@ -107,6 +109,7 @@ window.onload = function() {
   //   colorArr[3].id = 'darkred';
   //}
 };
+
 
 // function correctInput(numb) {
 //   if (numb < 5) {
