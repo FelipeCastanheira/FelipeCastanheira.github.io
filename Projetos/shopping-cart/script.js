@@ -31,6 +31,7 @@ function createProductImageElement(imageSource) {
   return img;
 }
 
+// função que cria elementos com classe e texto
 function createCustomElement(element, className, innerText) {
   const e = document.createElement(element);
   e.className = className;
