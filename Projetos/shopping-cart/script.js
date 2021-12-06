@@ -4,6 +4,7 @@ const cartCleaner = document.querySelector('.empty-cart');
 const tagPrice = document.querySelector('.total-price');
 const items = document.querySelector('.items');
 
+// função que atualiza o preço do Subtotal do Carrinho
 const updatePrice = () => {
   const subtotal = totalPrice.toLocaleString('pt-BR', {
     style: 'currency',
@@ -12,6 +13,7 @@ const updatePrice = () => {
   tagPrice.innerText = `Subtotal: ${subtotal}`;
 };
 
+// função que limpa o carrinho
 cartCleaner.addEventListener('click', () => {
   saveCartItems();
   lis = document.querySelectorAll('li');
@@ -21,6 +23,7 @@ cartCleaner.addEventListener('click', () => {
   updatePrice();
 });
 
+// função que cria um elemento de imagem
 function createProductImageElement(imageSource) {
   const img = document.createElement('img');
   img.className = 'item__image';
