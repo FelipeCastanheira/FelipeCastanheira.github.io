@@ -5,12 +5,11 @@ const tagPrice = document.querySelector('.total-price');
 const items = document.querySelector('.items');
 
 const updatePrice = () => {
-  // const subtotal = totalPrice.toLocaleString('pt-BR', {
-  //   style: 'currency',
-  //   currency: 'BRL',
-  // });
-  // tagPrice.innerText = `Subtotal: ${subtotal}`;
-  tagPrice.innerText = totalPrice;
+  const subtotal = totalPrice.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  });
+  tagPrice.innerText = `Subtotal: ${subtotal}`;
 };
 
 cartCleaner.addEventListener('click', () => {
@@ -97,6 +96,7 @@ window.onload = async () => {
     savedArr = JSON.parse(getSavedCartItems());
     savedArr.forEach((item) => {
       cartItems.appendChild(createCartItemElement(item));
+      totalPrice = totalPrice + item.price;
     });
   }
   updatePrice();
