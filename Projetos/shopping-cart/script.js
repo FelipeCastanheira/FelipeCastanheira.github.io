@@ -39,6 +39,7 @@ function createCustomElement(element, className, innerText) {
   return e;
 }
 
+// função que exclui o item clicado
 async function cartItemClickListener(event, sku, price) {
   const li = event.target;
   li.remove();
