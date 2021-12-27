@@ -48,6 +48,7 @@ function salvarTarefas() {
   const tarefasEl = document.querySelectorAll('li');
 
   const tarefas = [];
+  // animais.forEach((animal) => animal.name);
 
   tarefasEl.forEach((tarefaEl) => {
     tarefas.push({
@@ -65,9 +66,9 @@ const tarefas = false;
 window.onload = function () {
   const tarefas = JSON.parse(localStorage.getItem('tarefas'));
   if (tarefas) {
-    for (const tarefa of tarefas) {
-      addTarefa(tarefa);
-    }
+    tarefas.forEach((tarefa) =>{
+      addTarefa(tarefa)
+    })
   }
 };
 

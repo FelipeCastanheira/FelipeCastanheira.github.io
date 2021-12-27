@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
   background-color: #124559;
   font-family: Impact, Haettenschweiler, "Arial", sans-serif;
+  margin-right: 0;
 }
 
 h1 {
@@ -44,17 +46,21 @@ h4 {
   text-align: center;
 }
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .img-txt {
   position: relative;
 }
 
 .inner-txt {
-  position: absolute;
-  top: 62%;
-  left: 5%;
   font-size: 2rem;
   color: white;
   text-shadow: 2px 2px #124559;
+  text-align: center;
 }
 
 
@@ -87,7 +93,7 @@ h4 {
   margin-bottom: 0;
   border-bottom: 0;
   display: flex;
-  flex-flow: nowrap row-reverse;
+  flex-flow: nowrap row;
   justify-content: space-around;
   align-items: center;
 }
@@ -142,8 +148,9 @@ footer ul {
 
 .projects {
   width: 100%;
-  height: 200px;
+  height: 250px;
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
   background-color: #aec3b0;
   padding: 15px 0;
@@ -151,8 +158,8 @@ footer ul {
 }
 
 .projects button {
-  height: 70%;
-  width: 30%;
+  height: 180px;
+  width: 25%;
   font-size: 40px;
   border: none;
   background-color: #070707;
@@ -160,6 +167,11 @@ footer ul {
   transition: 0.5s;
   cursor: pointer;
   border-radius: 10px;
+}
+
+.projects div {
+  display: flex;
+  justify-content: space-around;
 }
 
 .projects button:hover {
@@ -175,6 +187,10 @@ footer ul {
   border-radius: 2%;
 }
 
+.projects img {
+  width: 25%;
+}
+
 .hProj {
   background-color: #aec3b0;
 }
@@ -182,6 +198,8 @@ footer ul {
 .hProj h4 {
   color: black;
 }
+
+
 
 @media screen and (max-width: 800px) {
   .topo nav h2 {
