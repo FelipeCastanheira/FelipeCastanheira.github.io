@@ -1,25 +1,23 @@
+import React from 'react';
 import './App.css';
-import { AboutMe } from './components/AboutMe';
-import { Footer } from './components/Footer';
-import { HardSkills } from './components/HardSkills';
-import { Header } from './components/Header';
-import { Projects } from './components/Projects';
-import { SoftSkills } from './components/SoftSkills';
+import { BrowserRouter as Router, Routes as Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Tryunfo from './tryunfo/Tryunfo';
+import SolarSystem from './solar-system/SolarSystem';
 
-
-function App() {
-  return (
-    <>
-      <Header />
-      <main>
-        <AboutMe />
-        <SoftSkills />
-        <HardSkills />
-        <Projects />
-      </main>
-      <Footer />
-    </>
-  );
+class App extends React.Component {
+  render() {
+    
+    return (
+      <Router>
+        <Switch>
+          <Route exact path="/tryunfo" component={ Tryunfo } />
+          <Route exact path="/solarsystem" component={ SolarSystem } />
+          <Route exact path="/" component={ Home } />
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;
