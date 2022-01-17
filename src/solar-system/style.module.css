@@ -1,0 +1,79 @@
+.solarsystem {
+  text-align: center;
+  background-image: url('./images/background.png');
+  color: white;
+  font-family: Verdana , Geneva , sans-serif;
+}
+
+.solarsystem header {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 25px;
+}
+
+.solarsystem [ data-testid = 'solar-system'  ] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.solarsystem [ data-testid = 'solar-system' ] h2 {
+  background-color: #00808011;
+  border: 1px solid rgba(0, 128, 128, 0.26);
+  border-radius: 6px;
+  display: flex;
+  margin-bottom: 25px;
+  padding: 15px 65px;
+}
+
+
+.solarsystem .cards {
+  display: flex;
+  justify-content: space-between;
+  max-width: 95%;
+}
+
+.solarsystem [ data-testid = 'planet-card'  ] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 9%;
+}
+
+.solarsystem [ data-testid = 'mission-card'  ] {
+  background-color: #00808011;
+  border: 1px solid rgba(0, 128, 128, 0.26);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  justify-content: center;
+  margin: 0.9rem;
+  text-align: center;
+  width: 15rem;
+}
+
+.solarsystem [ data-testid = 'mission-year'  ] {
+  color: aqua;
+  opacity: 0.8;
+}
+
+.solarsystem [ data-testid = 'mission-destination'  ] {
+  color: aqua;
+  opacity: 0.8;
+}
+
+.solarsystem .m-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.solarsystem [ data-testid = 'missions'  ] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto;
+}
