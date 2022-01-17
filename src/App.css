@@ -10,6 +10,11 @@ body {
   margin-right: 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   display: inline-block;
   font-family: Lobster;
