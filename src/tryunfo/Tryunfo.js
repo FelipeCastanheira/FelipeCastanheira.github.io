@@ -128,8 +128,8 @@ class Tryunfo extends React.Component {
       isTrunfoFilter,
     } = this.state;
     return (
-      <>
-        <main className={ style.tryunfo }>
+      <div className={ style.tryunfo }>
+        <main>
           <Form
             cardName={ cardName }
             cardDescription={ cardDescription }
@@ -219,7 +219,7 @@ class Tryunfo extends React.Component {
             </label>
           </div>
         </section>
-      </>
+      </div>
     );
   }
 }

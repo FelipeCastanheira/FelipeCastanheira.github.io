@@ -33,7 +33,7 @@ code {
   width: 30rem;
 }
 
-main {
+.tryunfo main {
   display: flex;
   justify-content: space-evenly;
   padding: 1rem 0;

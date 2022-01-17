@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import style from './App.module.css';
 import { AboutMe } from './components/AboutMe';
 import { Footer } from './components/Footer';
 import { HardSkills } from './components/HardSkills';
@@ -14,7 +14,7 @@ class Home extends React.Component {
     return (
       <>
         <Header />
-        <main>
+        <main className={ style.home }>
           <AboutMe />
           <SoftSkills />
           <HardSkills />

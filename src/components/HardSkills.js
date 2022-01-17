@@ -2,6 +2,7 @@ import React from 'react';
 import hard1 from '../img/hard1.jpg';
 import hard2 from '../img/hard2.jpg';
 import hard3 from '../img/hard3.jpg';
+import style from '../App.module.css';
 
 const hards = [
   {src: hard1, title: 'Gerenciamento de Projetos', txt: 'Pós-graduação e prática no dia-a-dia'},
@@ -15,11 +16,11 @@ const hards = [
 export class HardSkills extends React.Component {
   render() {
     return (
-      <div className="Hard">
-        <header className="title-skill"><h4>Hard Skills</h4></header>
-        <div className="card-container">
+      <div className={ style.Hard }>
+        <header className={ style.titleSkill }><h4>Hard Skills</h4></header>
+        <div className={ style.cardContainer }>
           {hards.map((hard) => (
-            <div className="card"  key={hard.title}>
+            <div className={ style.card }  key={hard.title}>
               {hard.title} <br /><img src={hard.src} alt={hard.title} />
               <p>{hard.txt}</p>
             </div>
