@@ -11,9 +11,9 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/tryunfo" component={ Tryunfo } />
-          <Route exact path="/solarsystem" component={ SolarSystem } />
-          <Route exact path="/" component={ Home } />
+          <Route exact path="/tryunfo" element={ <Tryunfo /> } />
+          <Route exact path="/solarsystem" element={ <SolarSystem /> } />
+          <Route exact path="/" element={ <Home /> } />
         </Switch>
       </Router>
     );
