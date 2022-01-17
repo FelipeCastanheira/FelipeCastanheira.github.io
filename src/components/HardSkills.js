@@ -21,7 +21,8 @@ export class HardSkills extends React.Component {
         <div className={ style.cardContainer }>
           {hards.map((hard) => (
             <div className={ style.card }  key={hard.title}>
-              {hard.title} <br /><img src={hard.src} alt={hard.title} />
+              <p>{hard.title}</p>
+              <img src={hard.src} alt={hard.title} />
               <p>{hard.txt}</p>
             </div>
           ))}

@@ -18,7 +18,8 @@ export class SoftSkills extends React.Component {
         <div className={ style.cardContainer }>
           {softs.map((soft) => (
             <div className={ style.card }  key={soft.title}>
-              {soft.title} <br /><img src={soft.src} alt={soft.title} />
+              <p>{soft.title}</p>
+              <img src={soft.src} alt={soft.title} />
               <p>{soft.txt}</p>
             </div>
           ))}

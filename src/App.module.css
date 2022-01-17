@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
   background-color: #124559;
-  font-family: Impact, Haettenschweiler, "Arial", sans-serif;
+  /* font-family: Impact, Haettenschweiler, "Arial", sans-serif; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-right: 0;
 }
 
@@ -15,7 +17,8 @@ body {
   flex-direction: column;
 }
 
-.home h1 {
+.topo h1 {
+  color: white;
   display: inline-block;
   font-family: Lobster;
   font-weight: 400;
@@ -69,17 +72,17 @@ body {
 }
 
 
-.home .card {
+.card {
   max-width: 23%;
   margin: 8px 5%;
   vertical-align: top;
 }
 
-.home .card p {
-  font-size: 1.2rem;
+.card p {
+  font-size: 1.8rem;
 }
 
-.home .card img {
+.card img {
   width: 69.69%;
   margin: 0 auto;
   border-radius: 3%;
@@ -87,12 +90,12 @@ body {
   cursor: pointer;
 }
 
-.home .card img:hover {
+.card img:hover {
   opacity: 50%;
   width: 73%;
 }
 
-.home .topo {
+.topo {
   background-color: #124559;
   color: #eff6e0;
   margin-bottom: 0;
@@ -103,10 +106,25 @@ body {
   align-items: center;
 }
 
-.home .topo nav h2 {
+.topo nav h2 {
+  align-items: center;
+  background-color: #eff6e0;
+  border-radius: 2.5rem;
   display: flex;
+  font-size: 2.2rem;
+  gap: 2.2rem;
+  height: 5rem;
   justify-content: space-between;
   padding: 9px;
+}
+
+.topo a {
+  color: #175B75;
+  transition: 0.5s;
+}
+
+.topo a:hover {
+  color: #070707;
 }
 
 .home .Soft {
@@ -131,11 +149,33 @@ body {
   width: 100%;
 } */
 
-.home footer ul {
-  color: #aec3b0;
-  text-align: center;
-  display: inline;
-  margin: 0 auto;
+footer {
+  align-items: center;
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+}
+
+footer ul {
+  align-items: center;
+  background-color: #eff6e0;
+  border-radius: 1.3rem;
+  display: flex;
+  font-size: 2rem;
+  gap: 3rem;
+  height: 2.6rem;
+  justify-content: space-between;
+  padding: 9px;
+  width: 20rem;
+}
+
+footer a {
+  color: #175B75;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  color: #070707;
 }
 
 .home .Hard {
@@ -199,6 +239,8 @@ body {
 .home .hProj {
   background-color: #aec3b0;
 }
+
+.card
 
 .home .hProj h4 {
   color: black;
