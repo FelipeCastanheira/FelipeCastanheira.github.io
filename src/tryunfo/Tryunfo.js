@@ -1,4 +1,4 @@
-import './index.css';
+import style from './Tryunfo.module.css';
 import React from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
@@ -129,7 +129,7 @@ class Tryunfo extends React.Component {
     } = this.state;
     return (
       <>
-        <main>
+        <main className={ style.tryunfo }>
           <Form
             cardName={ cardName }
             cardDescription={ cardDescription }
