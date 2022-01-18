@@ -8,14 +8,14 @@
   background-color: #FAFAFA;
   color: rgba(0, 0, 0, 0.75);
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 
 code {
@@ -30,13 +30,14 @@ code {
   flex-direction: column;
   margin: auto 2rem;
   padding: 2rem;
-  width: 30rem;
+  width: 50rem;
 }
 
 .tryunfo main {
   display: flex;
   justify-content: space-evenly;
   padding: 1rem 0;
+  width: 100%;
 }
 
 .tryunfo aside {
@@ -46,22 +47,30 @@ code {
   color: white;
   padding: 2rem 0 0 1.5rem;
   text-align: center;
-  width: 30rem;
+  width: 50rem;
 }
 
 .tryunfo input {
   font-size: 1.2rem;
 }
 
-.tryunfo .label {
+.tryunfo label {
   display: flex;
   flex-direction: column;
 }
 
+.tryunfo label input {
+  font-size: 1.7rem;
+}
+
 .tryunfo .number {
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 1rem;
+}
+
+.tryunfo .number input {
+  height: 3rem;
 }
 
 .tryunfo .textarea input {
@@ -130,27 +139,28 @@ code {
   opacity: 0.6;
 }
 
-.tryunfo .card-container {
+.tryunfo .cardContainer {
   background-color: #036B52;
   border: 5px solid white;
-  border-radius: 1rem;
-  height: 25rem;
-  margin: 3rem auto;
+  border-radius: 2rem;
+  height: 50rem;
+  margin: 6rem auto;
   position: relative;
-  width: 16rem;
+  width: 32rem;
 }
 
-.tryunfo .card-container p {
+.tryunfo .cardContainer p {
+  font-size: 2rem;
   height: fit-content;
   inset: 0;
   margin: auto;
-  max-width: 13rem;
+  max-width: 26rem;
   position: absolute;
-  top: 8px;
+  top: 25px;
   transform: rotate(-12deg);
 }
 
-.tryunfo .full-card {
+.tryunfo .fullCard {
   display: flex;
   flex-direction: column;
   height: 95%;
@@ -162,30 +172,31 @@ code {
   width: 95%;
 }
 
-.tryunfo .full-card h4 {
+.tryunfo .fullCard h4 {
   background-color: #023031;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 1rem 1rem 0 0;
   display: inline-block;
-  font-size: 1.8rem;
-  height: 3rem;
-  padding-right: 0.8rem;
+  font-size: 3.6rem;
+  height: 6rem;
+  padding: 0.8rem 1.6rem 0 0;
   text-align: end;
+  margin-top: 0;
   width: 100%;
 }
 
 .tryunfo .cardImg {
-  height: 9rem;
+  height: 18rem;
   margin-top: 0;
   position: relative;
   width: 100%;
 }
 
-.tryunfo .logo-trunfo {
-  height: 4rem;
+.tryunfo .logoTrunfo {
+  height: 8rem;
   left: 55%;
   position: absolute;
   top: 20%;
-  width: 4rem;
+  width: 8rem;
 }
 
 .tryunfo [ data-testid = "image-card" ] {
@@ -193,52 +204,66 @@ code {
   width: 100%;
 }
 
-.tryunfo .half-box {
+.tryunfo .greenBox {
   border-color: transparent #036B52 #036B52 transparent;
   border-style: solid;
-  border-width: 0 0 3rem 14.5rem;
-  height: 3rem;
+  border-width: 0 0 6rem 29rem;
+  bottom: 0;
+  height: 6rem;
+  position: absolute;
+  right: 0;
   width: 100%;
 }
 
-.tryunfo .green {
-  bottom: 0;
-  position: absolute;
-  right: 0;
-}
-
-.tryunfo .white {
+.tryunfo .whiteBox {
   border-color: transparent white white transparent;
+  border-style: solid;
+  border-width: 0 0 6rem 29rem;
+  height: 6rem;
+  width: 100%;
 }
 
-.tryunfo .skills-container {
+.tryunfo .skillsContainer {
   background-color: white;
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 0 0 1rem 1rem;
   color: #023031;
   display: flex;
   flex-direction: column;
-  height: 8rem;
+  height: 16rem;
+}
+
+.skillsContainer h5 {
+  display: flex;
+  justify-content: space-between;
+  width: 67%;
+}
+
+.skillsContainer h6 {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  text-transform: capitalize;
 }
 
 .tryunfo h5 span {
   background-color: #023031;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 1rem 1rem 0;
   color: white;
-  margin-left: 1rem;
-  padding: 0.2rem 0.6rem;
+  margin-left: 2rem;
+  padding: 0.4rem 1.2rem;
 }
 
-.tryunfo .skills-container h5 {
-  font-size: 1rem;
-  margin: 0.3rem auto;
+.tryunfo .skillsContainer h5 {
+  font-size: 2rem;
+  margin: 0.6rem auto;
   text-transform: capitalize;
 }
 
-.tryunfo .full-card p {
+.tryunfo .fullCard p {
   background-color: white;
   color: #02694D;
-  height: 1.3rem;
-  margin: 0.3rem auto;
+  height: 2.6rem;
+  margin: 0.6rem auto;
 }
 
 .tryunfo .box {
@@ -247,20 +272,20 @@ code {
   flex-direction: column;
   justify-content: space-around;
   max-width: 40%;
-  padding-left: 1.5rem;
+  padding-left: 3rem;
   text-align: center;
 }
 
-.tryunfo .all-cards {
+.tryunfo .allCards {
   background-color: #0230315e;
-  border-top: 0.5rem solid #023031;
+  border-top: 1rem solid #023031;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
-.tryunfo .all-cards h2 {
+.tryunfo .allCards h2 {
   text-align: center;
   width: 100%;
 }
@@ -270,6 +295,12 @@ code {
   flex-direction: column;
 }
 
-.tryunfo .d-none {
+.tryunfo .col {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.tryunfo .dNone {
   display: none;
 }
