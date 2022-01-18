@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import style from '../Tryunfo.module.css';
 
 class Form extends React.Component {
   render() {
@@ -62,7 +63,7 @@ class Form extends React.Component {
       <form>
         <header><h1>Adicionar nova carta</h1></header>
         {inputs.map(({ testeid, type, name, prop, title }) => (
-          <div key={ testeid } className={ `${type} label` }>
+          <label key={ testeid } className={ style[type] }>
             <h3>{title}</h3>
             <input
               data-testid={ testeid }
@@ -72,9 +73,9 @@ class Form extends React.Component {
               value={ prop }
               onChange={ onInputChange }
             />
-          </div>
+          </label>
         ))}
-        <div className="rare label">
+        <label className={ style.rare } htmlFor='rare-input'>
           <h3>Raridade</h3>
           <select
             name="cardRare"
@@ -86,8 +87,8 @@ class Form extends React.Component {
             <option value="raro">Raro</option>
             <option value="muito raro">Muito Raro</option>
           </select>
-        </div>
-        <div className="trunfo label">
+        </label>
+        <label className={style.trunfo}>
           {hasTrunfo ? (<span>Você já tem um Super Trunfo em seu baralho</span>)
             : (
               <>
@@ -97,11 +98,11 @@ class Form extends React.Component {
                   data-testid={ hasTrunfo ? '' : 'trunfo-input' }
                   onChange={ onInputChange }
                   checked={ cardTrunfo }
-                  className={ hasTrunfo ? 'd-none' : 'tryunfo' }
+                  className={ hasTrunfo ? style.dNone : style.trInput }
                 />
                 <span>Super Trunfo</span>
               </>)}
-        </div>
+        </label>
         <button
           disabled={ isSaveButtonDisabled }
           onClick={ onSaveButtonClick }
