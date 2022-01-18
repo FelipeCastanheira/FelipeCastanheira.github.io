@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import imgPc from '../img/imgPc.jpeg';
 import logoT from '../img/logoT.png';
+import style from '../Tryunfo.module.css';
 
 class Card extends React.Component {
   render() {
@@ -17,24 +18,24 @@ class Card extends React.Component {
     } = this.props;
 
     return (
-      <div className="card-container">
-        <div className="full-card">
+      <div className={ style.cardContainer }>
+        <div className={ style.fullCard }>
           <h4 data-testid="name-card">{cardName}</h4>
-          <div className="cardImg">
+          <div className={ style.cardImg }>
             {
               cardImage
                 ? <img src={ cardImage } alt={ cardName } data-testid="image-card" />
                 : <img src={ imgPc } alt="notebook" data-testid="image-card" />
 
             }
-            <div className="green half-box" />
+            <div className={ style.greenBox} />
             {
               cardTrunfo
-                && <img src={ logoT } alt="super trunfo" className="logo-trunfo" />
+                && <img src={ logoT } alt="super trunfo" className={ style.logoTrunfo } />
             }
           </div>
-          <div className="white half-box" />
-          <div className="skills-container">
+          <div className={ style.whiteBox } />
+          <div className={ style.skillsContainer }>
             <h5>
               Attr1.............
               <span data-testid="attr1-card">{cardAttr1}</span>
@@ -47,10 +48,10 @@ class Card extends React.Component {
               Attr3.............
               <span data-testid="attr3-card">{cardAttr3}</span>
             </h5>
-            <h5 data-testid="rare-card">{cardRare}</h5>
-            <h6 data-testid={ cardTrunfo ? 'trunfo-card' : '' }>
+            <h6 data-testid="rare-card">{cardRare}</h6>
+            {/* <h6 data-testid={ cardTrunfo ? 'trunfo-card' : '' }>
               {cardTrunfo ? 'Super Trunfo' : ''}
-            </h6>
+            </h6> */}
           </div>
         </div>
         <p data-testid="description-card">{cardDescription}</p>

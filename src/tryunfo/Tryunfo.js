@@ -158,14 +158,14 @@ class Tryunfo extends React.Component {
             />
           </aside>
         </main>
-        <section className="all-cards">
+        <section className={ style.allCards }>
           <h2>Todas as Cartas</h2>
           {cardsList
             .filter((card) => card.cardName.includes(nameFilter)
               && (card.cardRare === rareFilter || rareFilter === 'todas')
               && (!isTrunfoFilter || card.cardTrunfo))
             .map((card) => (
-              <div className="box" key={ card.cardName }>
+              <div className={ style.box } key={ card.cardName }>
                 <Card
                   cardName={ card.cardName }
                   cardDescription={ card.cardDescription }
@@ -185,7 +185,7 @@ class Tryunfo extends React.Component {
                 </button>
               </div>
             ))}
-          <div className="column">
+          <div className={ style.col } ke>
             <label htmlFor="name-filter">
               <h5>Pesquisar</h5>
               <input
