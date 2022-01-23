@@ -7,7 +7,7 @@ import style from '../App.module.css';
 const softs = [
   {src: soft1, title: 'Autoliderança', txt: 'Gestão do tempo e aprendizagem rápida'},
   {src: soft2, title: 'Contribuição', txt: 'Motivação dobrada ao trabalhar em equipe'},
-  {src: soft3, title: 'Pensamento Crítico', txt: 'Facilidade em solucionar problemas logico-matemáticos'},
+  {src: soft3, title: 'Pensamento Crítico', txt: 'Facilidade em solucionar problemas lógico-matemáticos'},
 ];
 
 export class SoftSkills extends React.Component {

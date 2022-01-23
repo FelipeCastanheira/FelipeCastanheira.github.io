@@ -33,6 +33,12 @@ class Form extends React.Component {
         prop: cardDescription,
         title: 'Descrição',
       },
+      { testeid: 'image-input',
+        type: 'text',
+        name: 'cardImage',
+        prop: cardImage,
+        title: 'Imagem',
+      },
       { testeid: 'attr1-input',
         type: 'number',
         name: 'cardAttr1',
@@ -50,12 +56,6 @@ class Form extends React.Component {
         name: 'cardAttr3',
         prop: cardAttr3,
         title: 'Atributo 3',
-      },
-      { testeid: 'image-input',
-        type: 'text',
-        name: 'cardImage',
-        prop: cardImage,
-        title: 'Imagem',
       },
     ];
 
@@ -75,6 +75,10 @@ class Form extends React.Component {
             />
           </label>
         ))}
+        <p>
+          <span>Pontos Restantes: </span>
+          <span>{210 - cardAttr1 - cardAttr2 - cardAttr3}</span>
+        </p>
         <label className={ style.rare } htmlFor='rare-input'>
           <h3>Raridade</h3>
           <select
