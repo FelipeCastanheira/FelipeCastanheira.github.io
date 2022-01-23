@@ -9,10 +9,12 @@ class Universe extends React.Component {
     return (
       <div data-testid="solar-system">
         <Title headline="Planetas" />
-        {planets.map((planet) => {
-          const { name, image } = planet;
-          return <PlanetCard planetName={ name } planetImage={ image } key={ name } />;
-        })}
+        <section>
+          {planets.map((planet) => {
+            const { name, image } = planet;
+            return <PlanetCard planetName={ name } planetImage={ image } key={ name } />;
+          })}
+        </section>
       </div>
     );
   }
