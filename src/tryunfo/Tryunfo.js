@@ -184,40 +184,45 @@ class Tryunfo extends React.Component {
                   Excluir
                 </button>
               </div>
-            ))}
-          <div className={ style.col } ke>
-            <label htmlFor="name-filter">
-              <h5>Pesquisar</h5>
-              <input
-                type="text"
-                data-testid="name-filter"
-                value={ nameFilter }
-                name="nameFilter"
-                onChange={ this.handleFilter }
-              />
-            </label>
-            <select
-              data-testid="rare-filter"
-              value={ rareFilter }
-              name="rareFilter"
-              onChange={ this.handleFilter }
-            >
-              <option value="todas">Todas</option>
-              <option value="normal">Normal</option>
-              <option value="raro">Raro</option>
-              <option value="muito raro">Muito Raro</option>
-            </select>
-            <label htmlFor="trunfo-filter">
-              <h5>Super Trunfo</h5>
-              <input
-                type="checkbox"
-                data-testid="trunfo-filter"
-                checked={ isTrunfoFilter }
-                name="isTrunfoFilter"
-                onChange={ this.handleFilter }
-              />
-            </label>
-          </div>
+            ))
+          }
+          {cardsList.length > 2
+            && (
+              <div className={ style.col } ke>
+                <label htmlFor="name-filter">
+                  <h5>Pesquisar</h5>
+                  <input
+                    type="text"
+                    data-testid="name-filter"
+                    value={ nameFilter }
+                    name="nameFilter"
+                    onChange={ this.handleFilter }
+                  />
+                </label>
+                <select
+                  data-testid="rare-filter"
+                  value={ rareFilter }
+                  name="rareFilter"
+                  onChange={ this.handleFilter }
+                >
+                  <option value="todas">Todas</option>
+                  <option value="normal">Normal</option>
+                  <option value="raro">Raro</option>
+                  <option value="muito raro">Muito Raro</option>
+                </select>
+                <label htmlFor="trunfo-filter">
+                  <h5>Super Trunfo</h5>
+                  <input
+                    type="checkbox"
+                    data-testid="trunfo-filter"
+                    checked={ isTrunfoFilter }
+                    name="isTrunfoFilter"
+                    onChange={ this.handleFilter }
+                  />
+                </label>
+              </div>
+            )
+          }
         </section>
       </div>
     );
