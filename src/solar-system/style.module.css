@@ -8,7 +8,7 @@
 .solarsystem header {
   display: flex;
   justify-content: center;
-  margin: 10px 0 25px;
+  margin: 0 0 25px;
 }
 
 .solarsystem [ data-testid = 'solar-system'  ] {
@@ -16,6 +16,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.solarsystem section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0;
+}
+
+.solarsystem img {
+  margin-bottom: 30px;
+  max-width: 300px;
 }
 
 .solarsystem [ data-testid = 'solar-system' ] h2 {
@@ -39,29 +51,39 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 9%;
+  /* max-width: 9%; */
 }
 
 .solarsystem [ data-testid = 'mission-card'  ] {
   background-color: #00808011;
   border: 1px solid rgba(0, 128, 128, 0.26);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  height: 8rem;
+  height: 14rem;
   justify-content: center;
-  margin: 0.9rem;
+  margin: 4rem;
   text-align: center;
-  width: 15rem;
+  width: 20rem;
 }
+
+.solarsystem [ data-testid = 'mission-name'  ] {
+  border-bottom: 1px solid teal;
+  margin: 0;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
 
 .solarsystem [ data-testid = 'mission-year'  ] {
   color: aqua;
+  margin: 8px auto;
   opacity: 0.8;
 }
 
 .solarsystem [ data-testid = 'mission-destination'  ] {
   color: aqua;
+  margin-top: 8px;
   opacity: 0.8;
 }
 
@@ -75,5 +97,5 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
 }
