@@ -193,7 +193,6 @@ footer a:hover {
 
 .home .projects {
   width: 100%;
-  height: 250px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -202,8 +201,7 @@ footer a:hover {
   justify-content: space-evenly;
 }
 
-.home .projects button {
-  height: 180px;
+.home .projects a {
   width: 25%;
   font-size: 40px;
   border: none;
@@ -219,7 +217,7 @@ footer a:hover {
   justify-content: space-around;
 }
 
-.home .projects button:hover {
+.home .projects a:hover {
   background-color: #2CAADB;
   color: white;
 }
@@ -233,7 +231,9 @@ footer a:hover {
 }
 
 .home .projects img {
-  width: 25%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 80%;
 }
 
 .home .hProj {
