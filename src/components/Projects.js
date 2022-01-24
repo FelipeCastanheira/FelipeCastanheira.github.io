@@ -1,12 +1,12 @@
 import React from 'react';
-import todoPrint from '../img/todo-print.png';
-import pixelsPrint from '../img/pixels-print.png';
-import shoppingPrint from '../img/shopping-print.png';
+import tryunfoPrint from '../img/tryunfo-print.PNG';
+import solarPrint from '../img/solarsystem-print.PNG';
 import style from '../App.module.css';
+import { Link } from 'react-router-dom';
 
-const projNames = ['Todo-List', 'Pixels-Art', 'Shopping Cart'];
-const projUrl = ['todo-list', 'pixels-art', 'shopping-cart'];
-const imgArray = [todoPrint, pixelsPrint, shoppingPrint];
+const projNames = ['Tryunfo', 'Solar System'];
+const projUrl = ['tryunfo', 'solarsystem'];
+const imgArray = [tryunfoPrint, solarPrint];
 
 export class Projects extends React.Component {
   render() {
@@ -15,10 +15,10 @@ export class Projects extends React.Component {
         <header className={ style.titleProj }><h4>Projetos</h4></header>
         <div>
           {projNames.map((proj, i) => (
-            <button onClick={() => window.open(`../Projetos/${projUrl[i]}/index.html`)} key={proj}>
+            <Link to={`/${projUrl[i]}`}>
               <h3>{proj}</h3>
               <img src={imgArray[i]} alt={proj} />
-            </button>
+            </Link>
           ))}
         </div>
       </section>
