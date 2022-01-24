@@ -7,11 +7,10 @@ export class AboutMe extends React.Component {
     return (
       <section className={ style.aboutMe }>
         <img src={vistaJpg} alt="Felipe olhando a cidade de Santos" width="100%" />
-        <div>
-          <h3 className={ style.innerTxt }>
-            Alguém fascinado por aprender, ensinar e ajudar pessoas.
-          </h3>
-        </div>
+        <h3 className={ style.innerTxt }>
+          <p>Alguém fascinado por aprender,</p>
+          <p>ensinar e ajudar pessoas.</p>
+        </h3>
       </section>
     )
   }
