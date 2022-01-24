@@ -156,7 +156,7 @@ code {
   margin: auto;
   max-width: 26rem;
   position: absolute;
-  top: 25px;
+  top: 12px;
   transform: rotate(-12deg);
 }
 
@@ -180,7 +180,7 @@ code {
   height: 6rem;
   padding: 0.8rem 1.6rem 0 0;
   text-align: end;
-  margin-top: 0;
+  margin: 0 auto;
   width: 100%;
 }
 
