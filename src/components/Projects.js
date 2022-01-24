@@ -15,7 +15,7 @@ export class Projects extends React.Component {
         <header className={ style.titleProj }><h4>Projetos</h4></header>
         <div>
           {projNames.map((proj, i) => (
-            <Link to={`/${projUrl[i]}`}>
+            <Link to={`/${projUrl[i]}`} key={proj}>
               <h3>{proj}</h3>
               <img src={imgArray[i]} alt={proj} />
             </Link>
