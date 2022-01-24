@@ -54,27 +54,40 @@ body {
   text-align: center;
 }
 
-.home .aboutMe {
+/* .home .aboutMe {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
-.home .imgTxt {
+.home .aboutMe {
   position: relative;
 }
 
+.home .aboutMe img {
+  width: 100%;
+}
+/* 
+.home .imgTxt {
+  position: relative;
+} */
+
 .home .innerTxt {
-  font-size: 2rem;
   color: white;
-  text-shadow: 2px 2px #124559;
-  text-align: center;
+  font-size: 3rem;
+  left: 8%;
+  position: absolute;
+  top: 60%;
 }
 
+.home .innerTxt p {
+  background-color: #124559;
+  width: fit-content;
+}
 
 .card {
-  max-width: 23%;
   margin: 8px 5%;
+  min-width: 25%;
   vertical-align: top;
 }
 
@@ -193,7 +206,6 @@ footer a:hover {
 
 .home .projects {
   width: 100%;
-  height: 250px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -202,9 +214,7 @@ footer a:hover {
   justify-content: space-evenly;
 }
 
-.home .projects button {
-  height: 180px;
-  width: 25%;
+.home .projects a {
   font-size: 40px;
   border: none;
   background-color: #070707;
@@ -219,7 +229,7 @@ footer a:hover {
   justify-content: space-around;
 }
 
-.home .projects button:hover {
+.home .projects a:hover {
   background-color: #2CAADB;
   color: white;
 }
@@ -233,7 +243,9 @@ footer a:hover {
 }
 
 .home .projects img {
-  width: 25%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  width: 80%;
 }
 
 .home .hProj {
@@ -248,8 +260,27 @@ footer a:hover {
 
 
 
-@media screen and (max-width: 800px) {
-  .topo nav h2 {
-    font-size: 16px;
+@media screen and (max-width: 720px) {
+  .topo nav {
+    display: none;
+  }
+
+  .home .innerTxt {
+    font-size: 15px;
+    top: 50%;
+  }
+
+  .home .cardContainer {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .home .projects div {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .home .projects a {
+    margin: 15px;
   }
 }
