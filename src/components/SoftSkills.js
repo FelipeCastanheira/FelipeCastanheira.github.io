@@ -13,7 +13,7 @@ const softs = [
 export class SoftSkills extends React.Component {
   render() {
     return (
-      <div className={ style.Soft }>
+      <div className={ style.Soft } id="Soft">
         <header className={ style.titleSkill }><h4>Soft Skills</h4></header>
         <div className={ style.cardContainer }>
           {softs.map((soft) => (
