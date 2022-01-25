@@ -11,7 +11,7 @@ const imgArray = [tryunfoPrint, solarPrint];
 export class Projects extends React.Component {
   render() {
     return (
-      <section className={ style.projects }>
+      <section className={ style.projects } id="projects">
         <header className={ style.titleProj }><h4>Projetos</h4></header>
         <div>
           {projNames.map((proj, i) => (
