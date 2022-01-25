@@ -16,7 +16,7 @@ const hards = [
 export class HardSkills extends React.Component {
   render() {
     return (
-      <div className={ style.Hard }>
+      <div className={ style.Hard } id="Hard">
         <header className={ style.titleSkill }><h4>Hard Skills</h4></header>
         <div className={ style.cardContainer }>
           {hards.map((hard) => (
