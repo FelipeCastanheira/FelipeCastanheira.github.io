@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #124559;
   /* font-family: Impact, Haettenschweiler, "Arial", sans-serif; */

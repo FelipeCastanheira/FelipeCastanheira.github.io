@@ -8,8 +8,8 @@ export class Header extends React.Component {
         <h1>Felipe Castanheira</h1>
         <nav>
           <h2>
-            <a href="#Soft">Soft Skills</a>
-            <a href="#Hard">Hard Skills</a>
+            <a href="#Soft">Sobre Mim</a>
+            <a href="#projects">Portfólio</a>
           </h2>
         </nav>
       </header>
