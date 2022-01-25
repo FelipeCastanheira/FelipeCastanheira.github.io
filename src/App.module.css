@@ -178,6 +178,7 @@ footer ul {
   gap: 3rem;
   height: 2.6rem;
   justify-content: space-between;
+  margin-top: 9px;
   padding: 9px;
   width: 20rem;
 }
@@ -251,8 +252,6 @@ footer a:hover {
 .home .hProj {
   background-color: #aec3b0;
 }
-
-.card
 
 .home .hProj h4 {
   color: black;
