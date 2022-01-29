@@ -7,7 +7,7 @@ import App from './App';
 //   expect(linkElement).toBeInTheDocument();
 // });
 
-test('verifica se tem 4 links', () => {
+test('verifica se tem 6 links', () => {
   render(<App />);
   const linkElements = screen.getAllByRole("link");
   expect(linkElements).toHaveLength(6);
