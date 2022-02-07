@@ -71,10 +71,12 @@ body {
 .home .aboutMe img {
   width: 100%;
 }
-/* 
-.home .imgTxt {
-  position: relative;
-} */
+
+@keyframes scaleAnimation {
+  from {transform: scale(0.3);}
+  75% {transform: scale(1.05);}
+  to {transform: scale(1);}
+}
 
 .home .innerTxt {
   color: white;
@@ -82,6 +84,7 @@ body {
   left: 8%;
   position: absolute;
   top: 60%;
+  animation: scaleAnimation 2s;
 }
 
 .home .innerTxt p {
