@@ -132,8 +132,9 @@ body {
 }
 
 .topo img {
+  filter: opacity(0.6);
   height: 56px;
-  margin: 30px 30px 0 0;
+  margin: 25px 30px 0 0;
   width: 60px;
 }
 
