@@ -1,6 +1,6 @@
 import React from 'react';
 import style from '../App.module.css';
-import whiteLogoFC from '../img/logosFC/newWhiteLogo.png';
+import whiteLogoFC from '../img/logosFC/logoFc.png';
 
 export class Header extends React.Component {
   render() {
