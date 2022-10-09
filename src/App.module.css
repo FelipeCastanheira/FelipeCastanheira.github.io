@@ -280,8 +280,21 @@ footer a:hover {
 
 
 @media screen and (max-width: 720px) {
+  .topo-main {
+    display: flex;
+    align-items: center;
+  }
+
+  .topo img {
+    margin: 5px 10px;
+  }
+
   .topo nav {
     display: none;
+  }
+
+  .topo h1 {
+    font-size: 30px;
   }
 
   .home .innerTxt {
