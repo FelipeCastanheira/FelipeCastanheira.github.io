@@ -64,12 +64,76 @@ body {
   justify-content: center;
 } */
 
-.home .aboutMe {
-  position: relative;
+.home .aboutMe form {
+  display: flex;
+  flex-direction: column;
+  color: #070707;
+  width: 330px;
+  max-width: 350px;
+  border-radius: 5px;
+  background-color: #175B75;
 }
 
-.home .aboutMe img {
+.home .aboutMe form span {
+  text-align: center;
+  color: rgb(243, 172, 159);
+  display: none;
+}
+
+.home .aboutMe {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
+  min-height: 400px;
+  background-image: url('./img/vista.jpg');
+  background-size: cover;
+}
+
+.home .aboutMe div {
+  width: 20%;
+  /* border: 1px solid black; */
+  height: 50px;
+}
+
+.home .aboutMe h3 {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.home .aboutMe input {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  margin: 6px;
+  border-radius: 2px;
+}
+
+.home .aboutMe [type="submit"] {
+  background-color: #124559;
+  color: white;
+  transition: 0.4s;
+}
+
+.home .aboutMe [type="submit"]:hover {
+  background-color: #2CAADB;
+}
+
+.home .aboutMe select {
+  font-size: 18px;
+  border: none;
+  margin: 6px;
+  padding: 10px;
+}
+
+.home .aboutMe textarea {
+  font-size: 15px;
+  border-radius: 2px;
+  border: none;
+  margin: 6px;
+  padding: 10px;
 }
 
 @keyframes scaleAnimation {
@@ -295,6 +359,10 @@ footer a:hover {
 
   .topo h1 {
     font-size: 30px;
+  }
+
+  .home .aboutMe div {
+    display: none;
   }
 
   .home .innerTxt {
