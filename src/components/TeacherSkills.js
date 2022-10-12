@@ -1,20 +1,21 @@
 import React from 'react';
-import soft1 from '../img/soft1.jpg';
-import soft2 from '../img/soft2.jpg';
-import soft3 from '../img/soft3.jpg';
+import teach1 from '../img/teach1.jpg';
+import teach2 from '../img/teach2.jpg';
+import teach3 from '../img/teach3.jpg';
 import style from '../App.module.css';
 
 const softs = [
-  {src: soft1, title: 'Autoliderança', txt: 'Gestão do tempo e aprendizagem rápida'},
-  {src: soft2, title: 'Contribuição', txt: 'Motivação dobrada ao trabalhar em equipe'},
-  {src: soft3, title: 'Pensamento Crítico', txt: 'Facilidade em solucionar problemas lógico-matemáticos'},
+  {src: teach1, title: 'Foco na Prática', txt: 'Aula flexível e personalizada para você'},
+  {src: teach2, title: 'Didática', txt: '6 anos de experiência com aulas particulares'},
+  {src: teach3, title: 'Projetos', txt: 'Você também pode aprender desenvolvendo projetos'},
 ];
 
 export class TeacherSkills extends React.Component {
   render() {
     return (
       <div className={ style.Soft } id="Soft">
-        <header className={ style.titleSkill }><h4>Soft Skills</h4></header>
+        <header className={ style.titleSkill }><h4>Por que ter aulas o Felipe?</h4></header>
+        <br/>
         <div className={ style.cardContainer }>
           {softs.map((soft) => (
             <div className={ style.card }  key={soft.title}>

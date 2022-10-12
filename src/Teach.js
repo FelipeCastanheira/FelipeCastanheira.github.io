@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './App.module.css';
 import { AboutMe } from './components/AboutMe';
-import { Footer } from './components/Footer';
+// import { Footer } from './components/Footer';
 import { HardSkills } from './components/HardSkills';
 import { Header } from './components/Header';
 import { TeacherSkills } from './components/TeacherSkills';
@@ -19,7 +19,7 @@ class Teach extends React.Component {
           <TeacherSkills />
           <HardSkills />
         </main>
-        <Footer />
+        {/* <Footer /> */}
         <WhatsBtn/>
       </div>
     );

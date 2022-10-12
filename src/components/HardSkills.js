@@ -5,11 +5,11 @@ import hard3 from '../img/hard3.jpg';
 import style from '../App.module.css';
 
 const hards = [
-  {src: hard1, title: 'Gerenciamento de Projetos', txt: 'Pós-graduação e prática no dia-a-dia'},
-  {src: hard2, title: 'Desenvolvimento Web', txt: 'Estudante da Trybe - Full Stack'},
+  {src: hard1, title: 'JavaScript', txt: 'Com JS você pode desenvolver Front e Back End'},
+  {src: hard2, title: 'React JS', txt: 'Projetos de Front End simples e eficazes!'},
   {src: hard3, 
-    title: 'Graduação em Engenharia', 
-    txt: '5 anos de experiência com projetos e aulas particulares'
+    title: 'Desenvolvimento Web', 
+    txt: 'HTML semântico, CSS responsivo e JS'
   },
 ];
 
