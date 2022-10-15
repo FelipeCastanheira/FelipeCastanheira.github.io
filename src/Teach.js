@@ -12,7 +12,7 @@ class Teach extends React.Component {
   render() {
 
     return (
-      <div>
+      <div className={ style.teacher }>
         <Header title="Aulas Particulares" />
         <main className={ style.home }>
           <AboutMe />

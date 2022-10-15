@@ -224,6 +224,29 @@ body {
   color: #070707;
 }
 
+/* Teacher Page */
+
+.teacher {
+  position: relative;
+}
+
+.teacher .whatsBtn {
+  position: fixed;
+  right: 20px;
+  top: 85vh;
+}
+
+.teacher .whatsBtn img { 
+  width: 75px;
+  border-radius: 18px;
+  transition: 0.4s;
+}
+
+.teacher .whatsBtn img:hover {
+  transform: scale(1.03);
+  opacity: 0.7;
+}
+
 .home .Soft {
   background-color: #aec3b0;
   margin: 0 auto;
@@ -373,6 +396,10 @@ footer a:hover {
   .home .cardContainer {
     align-items: center;
     flex-direction: column;
+  }
+
+  .home .cardContainer img {
+    width: 250px;
   }
 
   .home .projects div {
