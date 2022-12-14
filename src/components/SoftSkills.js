@@ -7,7 +7,7 @@ import style from '../App.module.css';
 const softs = [
   {src: soft1, title: 'Autoliderança', txt: 'Gestão do tempo e aprendizagem rápida'},
   {src: soft2, title: 'Contribuição', txt: 'Motivação dobrada ao trabalhar em equipe'},
-  {src: soft3, title: 'Pensamento Crítico', txt: 'Facilidade em solucionar problemas lógico-matemáticos'},
+  {src: undefined, title: 'Pensamento Crítico', txt: 'Facilidade em solucionar problemas lógico-matemáticos'},
 ];
 
 export class SoftSkills extends React.Component {
@@ -19,7 +19,16 @@ export class SoftSkills extends React.Component {
           {softs.map((soft) => (
             <div className={ style.card }  key={soft.title}>
               <p>{soft.title}</p>
-              <img src={soft.src} alt={soft.title} />
+              {/* <img src={soft.src} alt={soft.title} /> */}
+              <div style={{
+                backgroundImage: `url(${soft.src || soft3})`,
+                width: '70%',
+                margin: '0 auto 10px',
+                borderRadius: '3%',
+                minHeight: '150px',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}/>
               <p>{soft.txt}</p>
             </div>
           ))}
