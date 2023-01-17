@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+:root {
+  --primary: #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,7 +26,7 @@ body {
 }
 
 .topo h1 {
-  color: white;
+  color: var(--primary);
   display: inline-block;
   font-family: Lobster;
   font-weight: 400;
@@ -98,7 +102,7 @@ body {
 
 .home .aboutMe h3 {
   font-size: 24px;
-  color: white;
+  color: var(--primary);
   text-align: center;
   margin: 10px auto;
 }
@@ -113,7 +117,7 @@ body {
 
 .home .aboutMe [type="submit"] {
   background-color: #124559;
-  color: white;
+  color: var(--primary);
   transition: 0.4s;
 }
 
@@ -143,7 +147,7 @@ body {
 }
 
 .home .innerTxt {
-  color: white;
+  color: var(--primary);
   font-size: 3rem;
   left: 8%;
   position: absolute;
@@ -339,7 +343,7 @@ footer a:hover {
 
 .home .projects a:hover {
   background-color: #2CAADB;
-  color: white;
+  color: var(--primary);
 }
 
 .home .projects iframe {
